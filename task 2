@@ -1,0 +1,20 @@
+fraze = input('')
+
+fraze = sorted(fraze)
+j = []
+for i in range(len(fraze)):
+    if i < len(fraze)-1:
+        if fraze[i] != fraze[i+1]: 
+            g = fraze.count(fraze[i])
+            j.append(g)
+            print(fraze[i], '=',g)
+if fraze[-2] == fraze[-1]:
+    
+    e = fraze.count(fraze[-1])
+    print(fraze[-2],'=',e)
+    j.append(g)
+if fraze[-2] != fraze[-1]:
+    
+    e = fraze.count(fraze[-1])
+    print(fraze[-1],'=',e)
+    j.append(g)
