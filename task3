@@ -1,0 +1,22 @@
+fraze = input('')
+
+fraze = sorted(fraze)
+j = []
+for i in range(len(fraze)):
+    if i < len(fraze)-1:
+        if fraze[i] != fraze[i+1]: 
+            g = fraze.count(fraze[i])
+            if g > 1:
+                j.append(g)
+                print('Повторяющаяся -> ',fraze[i])
+if fraze[-2] == fraze[-1]:
+    
+    e = fraze.count(fraze[-1])
+    if e > 1:
+        print('Повторяющаяся -> ',fraze[-2])
+        
+if fraze[-2] != fraze[-1]:
+    
+    e = fraze.count(fraze[-1])
+    if e > 1:
+        print('Повторяющаяся -> ',fraze[-1])
